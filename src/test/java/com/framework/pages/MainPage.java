@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class MainPage extends PageObject {
     public void debitCards()  {
-        @FindBy (xpath = "srs")
+
         $("//p[text()='Дебетовые карты']").click();
         $("//*[contains(text(), 'Особые')]/..//*[@data-test-id='Button-primary-md']").click();
         $("//*[@name='odc-personal__lastName']").sendKeys("Вонючий");
