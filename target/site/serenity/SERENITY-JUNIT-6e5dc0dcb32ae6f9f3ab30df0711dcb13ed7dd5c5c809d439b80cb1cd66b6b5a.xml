@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="kakanie" skipped="0" tests="1" time="15.32" timestamp="2021-08-04 11:10:21"><testcase name="ilya kakaet"><failure message="Expected enabled element was not enabled&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-JBM7397', ip: '192.168.1.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JBM7397', ip: '192.168.1.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JBM7397', ip: '192.168.1.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'
+Driver info: driver.version: unknown&#13;
+com.framework.pages.MainPage.debitCards(MainPage.java:7)&#13;
+com.framework.steps.TestSteps.debitCard(TestSteps.java:19)&#13;
+com.framework.features.TestStepDefinition.selectDebitCard(TestStepDefinition.java:21)&#13;
+✽.user selects(file:///D:/SerenityAutoTest/src/test/resources/features/test.feature:5)&#13;
+</system-err></testcase></testsuite>
