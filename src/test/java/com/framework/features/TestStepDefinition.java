@@ -1,32 +1,35 @@
 package com.framework.features;
 
-import com.framework.steps.TestSteps;
+import com.framework.steps.ClientSteps;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-
+import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 
 public class TestStepDefinition {
 
     @Steps
-    TestSteps testSteps;
+    ClientSteps client;
 
-    @Given("user opens {word}")
-    public void userOpen(String url){
-    testSteps.ilyaVPopy(url);
-
+    @Given("client opens any {word} site")
+    public void clientOpensSite(String url) {
+        client.opensSite(url);
     }
 
-    @Given("user selects")
-    public void selectDebitCard(){
-    testSteps.debitCard();
+    @When("client selects cards in main menu")
+    public void clientSelectCardsInMainMenu () {
+        client.selectCardsInMainMenu();
     }
 
+    @And("client selects {word} in cards menu")
+    public void clientSelectsDebitCardsInCardsMenu(String cardMenuTitle) {
+        client.selectsCardInCardMenu(cardMenuTitle);
+    }
 
-
+    @And("client selects {word} card")
+    public void clientSelectsCard(String cards) {
+        client.selectsCard(cards);
+        client.fillsPersonalDate();
+    }
 
 }
-
-
-
-
-

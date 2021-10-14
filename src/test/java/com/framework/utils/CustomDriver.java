@@ -19,6 +19,7 @@ public class CustomDriver implements DriverSource {
     }
 
     private WebDriver newChromeDriver() {
+
         ChromeDriverManager.getInstance(ChromeDriver.class).setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="SberTest" skipped="0" tests="1" time="41.46" timestamp="2021-10-14 10:47:10"><testcase name="card design"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+com.framework.pages.BasePage.customSendKey(BasePage.java:24)&#13;
+com.framework.pages.ApplicationCard.inputPersonalInformation(ApplicationCard.java:52)&#13;
+com.framework.steps.ClientSteps.fillsPersonalDate(ClientSteps.java:54)&#13;
+com.framework.features.TestStepDefinition.clientSelectsYoungCard(TestStepDefinition.java:32)&#13;
+✽.client selects sber_card card(file:///D:/SerenityAutoTest/AutoTest/src/test/resources/features/test.feature:9)&#13;
+</system-err></testcase></testsuite>
